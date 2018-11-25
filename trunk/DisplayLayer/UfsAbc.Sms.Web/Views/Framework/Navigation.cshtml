@@ -1,0 +1,53 @@
+﻿@model UfsAbc.Sms.Web.Models.Default.NavigationViewModel
+<div class="breadLine">
+    <div class="arrow"></div>
+    <div class="adminControl active">
+        Hi, @ViewBag.Name
+    </div>
+</div>
+<div class="admin" style="display: block;">
+    <div class="image">
+        <img class="img-polaroid" src="~/Scripts/img/users/aqvatarius.jpg">
+    </div>
+    <ul class="control">
+        <li><span class="icon-comment"></span><a href="#">修改密码</a> <a class="caption red" href="messages.html">12</a></li>
+        <li><span class="icon-cog"></span><a href="#" onclick="LogOut('logout')">注销</a></li>
+        <li><span class="icon-share-alt"></span><a href="#" onclick="LogOut('close')">退出</a></li>
+    </ul>
+    <div class="info" style="display: none;">
+        <span>欢迎回来!当前系统时间:@ViewBag.Time</span>
+    </div>
+</div>
+
+<ul class="navigation">
+
+    @for (int i = 0; i < Model.ParentList.Count; i++)
+    {
+        <li class="openable">
+            <a href="#">
+                <span class="isw-list"></span><span class="text">@Model.ParentList[i].ParentModuleName</span>
+            </a>
+
+            @for (int j = 0; j < Model.SubList.Count; j++)
+            {
+                <ul>
+                    @if (Model.ParentList[i].ParentModuleId == Model.SubList[j].ParentModuleId)
+                    { 
+                        <li>
+                            <a href="javascript:;" onclick="javascript:_if.src='@Model.SubList[j].Location'">
+                                <span class="icon-th-large"></span><span class="text">@Model.SubList[j].ModuleName</span>
+                            </a>
+                        </li>     
+                    }
+                </ul>
+            }
+
+        </li>
+    }
+</ul>
+
+<div class="dr"><span></span></div>
+
+<div class="widget-fluid">
+    <div id="menuDatepicker"></div>
+</div>

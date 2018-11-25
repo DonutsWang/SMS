@@ -1,0 +1,111 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="shortcut icon" href="/Img/favicon.ico">
+    <link rel="stylesheet" href="/Scripts/css/bootstrap.css">
+    <link rel="stylesheet" href="/Scripts/css/plugins-1.2.css">
+    <link rel="stylesheet" href="/Scripts/css/main-1.2.css">
+    <link rel="stylesheet" href="/Scripts/css/themes.css">
+    <script type="text/javascript" src="/Scripts/js/ga.js"></script>
+    <script src="/Scripts/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <style type="text/css">
+        .jqstooltip
+        {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            visibility: hidden;
+            background: rgb(0, 0, 0) transparent;
+            background-color: rgba(0,0,0,0.6);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+            -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+            color: white;
+            font: 10px arial, san serif;
+            text-align: left;
+            white-space: nowrap;
+            padding: 5px;
+            border: 1px solid white;
+            z-index: 10000;
+        }
+
+        .jqsfield
+        {
+            color: white;
+            font: 10px arial, san serif;
+            text-align: left;
+        }
+    </style>
+</head>
+<body class="login">
+    <a href="javascript:void(0)" class="login-btn themed-background-default">
+        <span class="login-logo">
+            <span class="square1 themed-border-default"></span>
+            <span class="square2"></span>
+            <span class="name">UFS SMS</span>
+        </span>
+    </a>
+    <div class="left-door"></div>
+    <div class="right-door"></div>
+    <div id="login-container" class="hide">
+        <div class="block-tabs block-themed themed-border-night">
+
+            <div class="nav nav-tabs themed-background-deepsea ">
+                <div class="text-center logoHeader">
+                    <i class="icon-user"></i>
+                    <span>登录</span>
+                </div>
+            </div>
+            <div class="tab-content">
+                <div class="tab-pane active" id="login-form-tab">
+
+                    @using (Html.BeginForm())
+                    {
+                        <div class="control-group">
+                            <div class="controls">
+                                <div class="input-prepend">
+                                    <span class="add-on">
+                                        <i class="icon-envelope-alt"></i>
+                                    </span>
+                                    <input type="text" id="loginName" name="loginName" placeholder="登陆帐户....">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="controls">
+                                <div class="input-prepend">
+                                    <span class="add-on">
+                                        <i class="icon-asterisk"></i>
+                                    </span>
+                                    <input type="password" id="loginPassword" name="loginPassword" placeholder="登陆密码....">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="controls clearfix">
+                                <div class="pull-right">
+                                    <button type="submit" class="btn btn-success remove-margin">登录</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/Scripts/js/jquery.min.js"></script>
+    <script>!window.jQuery && document.write(unescape('%3Cscript src="/Scripts/js/plugins/jquery/jquery-1.9.1.min.js"%3E%3C/script%3E'));</script>
+    <script src="/Scripts/js/plugins/bootstrap.min.js"></script>
+    <script>$(function () { var e = 0; if ($("html").hasClass("csstransitions")) e = 750; $(".login-btn").mouseenter(function () { $(".left-door, .right-door, .login-btn").addClass("login-animate"); setTimeout(function () { $("#login-container").fadeIn(1500); $(".login-btn .name").fadeOut(250, function () { $(".login-btn .square1, .login-btn .square2").fadeIn(750); $("#login-email").focus() }) }, e) }) })</script>
+
+
+</body>
+</html>

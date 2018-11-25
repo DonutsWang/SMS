@@ -1,0 +1,17 @@
+D:\Work\Project\trunk\SMS\EntityLayer\Always.Sms.Entity\bin\Debug\Always.Sms.Entity.dll.config
+D:\Work\Project\trunk\SMS\EntityLayer\Always.Sms.Entity\bin\Debug\Always.Sms.Entity.dll
+D:\Work\Project\trunk\SMS\EntityLayer\Always.Sms.Entity\bin\Debug\Always.Sms.Entity.pdb
+D:\Work\Project\trunk\SMS\EntityLayer\Always.Sms.Entity\bin\Debug\EntityFramework.dll
+D:\Work\Project\trunk\SMS\EntityLayer\Always.Sms.Entity\bin\Debug\EntityFramework.xml
+D:\Work\Project\trunk\SMS\EntityLayer\Always.Sms.Entity\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\Work\Project\trunk\SMS\EntityLayer\Always.Sms.Entity\obj\Debug\Always.Sms.Entity.csprojResolveAssemblyReference.cache
+D:\Work\Project\trunk\SMS\EntityLayer\Always.Sms.Entity\obj\Debug\Always.Sms.Entity.dll
+D:\Work\Project\trunk\SMS\EntityLayer\Always.Sms.Entity\obj\Debug\Always.Sms.Entity.pdb
+D:\Work\Project\trunk\SMS\trunk\EntityLayer\Always.Sms.Entity\bin\Debug\Always.Sms.Entity.dll.config
+D:\Work\Project\trunk\SMS\trunk\EntityLayer\Always.Sms.Entity\bin\Debug\Always.Sms.Entity.dll
+D:\Work\Project\trunk\SMS\trunk\EntityLayer\Always.Sms.Entity\bin\Debug\Always.Sms.Entity.pdb
+D:\Work\Project\trunk\SMS\trunk\EntityLayer\Always.Sms.Entity\bin\Debug\EntityFramework.dll
+D:\Work\Project\trunk\SMS\trunk\EntityLayer\Always.Sms.Entity\bin\Debug\EntityFramework.xml
+D:\Work\Project\trunk\SMS\trunk\EntityLayer\Always.Sms.Entity\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\Work\Project\trunk\SMS\trunk\EntityLayer\Always.Sms.Entity\obj\Debug\Always.Sms.Entity.dll
+D:\Work\Project\trunk\SMS\trunk\EntityLayer\Always.Sms.Entity\obj\Debug\Always.Sms.Entity.pdb

@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @* 加载所有基本文件 *@
+    @Scripts.Render("~/Scripts/js/sms.js")
+    <script type="text/javascript">
+        sms.C();
+        var $CONFIG = {};
+        $CONFIG['AdminName'] = '@ViewBag.AdminName';
+    </script>
+    @RenderSection("headScripts", required: false)
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            @{
+                Html.RenderAction("Head", "Framework");
+            }
+        </div>
+        <div class="menu">
+            @{
+                Html.RenderAction("Navigation", "Framework");
+            }
+        </div>
+        <div class="content">
+            <div class="breadLine" style="display: none;">
+                @{
+                    Html.RenderAction("Search", "Framework");
+                }
+            </div>
+
+            <div>@RenderBody()</div>
+
+        </div>
+
+    </div>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
